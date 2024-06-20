@@ -47,3 +47,60 @@ footer {
   bottom: 0;
 }
 
+.home {
+  background-image: url(../assets/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.intro {
+  margin: 40px auto;
+  font-weight: bolder;
+  background-color: #ffffff6e;
+  text-align: left;
+  padding: 4px 25px 20px 25px;
+  position: relative; 
+  width: 80%;
+  border-radius: 20px;
+}
+
+.intro h1, h2, h3 {
+  margin-top: 30px;
+  font-weight: bolder;
+}
+
+.intro p, li {
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+.house {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.house-description {
+  flex: 1;
+  box-sizing: border-box;
+  margin: 15px 0;
+  padding: 4px 25px 20px 25px;
+  border-radius: 10px;
+  min-width: 260px;
+}
+.house-description a {
+  text-decoration: none;
+  color: gray
+}
+
+.house-description a:hover {
+  text-decoration:underline;
+}
+
+span {
+  font-weight: bolder;
+}
