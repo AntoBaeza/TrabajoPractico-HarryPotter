@@ -4,10 +4,16 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-
+@font-face {
+  font-family: 'fuenteHarry';
+  src: url('../fonts/MagicSchoolOne.ttf') format('woff2'), url('../fonts/MagicSchoolTwo.ttf') format('woff');
+  
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'fuenteHarry', Arial, Helvetica, sans-serif,;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -57,6 +63,7 @@ footer {
 }
 
 .home {
+
   background-repeat: no-repeat;
   background-position: center ;
   background-size: cover;
@@ -265,4 +272,51 @@ span {
 
 #scroll.show {
   display: block;
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+/* Media queries */
+@media (max-width: 1400px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .house-filter .btn {
+    width: 110px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .house-filter .btn {
+    width: 90px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .house-filter .btn {
+    width: 60px;
+    height: 70px;
+  }
 }
