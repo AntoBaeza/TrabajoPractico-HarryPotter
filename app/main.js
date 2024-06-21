@@ -1,6 +1,6 @@
 const $divCards = document.querySelector('.grid');
 const $btns = document.querySelectorAll('.btn');
-const $scrollToTopBtn = document.getElementById('scrollToTopBtn');
+const $scrollToTopBtn = document.getElementById('scroll');
 
 const url = 'https://hp-api.onrender.com/api/characters';
 
@@ -57,7 +57,7 @@ fetch(url)
 $scrollToTopBtn.addEventListener('click', scrollToTop);
 
 function scrollFunction() {
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  const scrollToTopBtn = document.getElementById("scroll");
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     scrollToTopBtn.classList.add("show");
   } else {
